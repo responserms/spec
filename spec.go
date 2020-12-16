@@ -59,10 +59,8 @@ func NewSubset(defs ...parser.NamedBlockDefinition) *Spec {
 	}
 }
 
-// Registrations returns all of the registrations that are registered with the Spec's
+// Registrations returns all of the parser.Registration instances that are added to the
 // registrar.
-//
-// TODO: Make this comment less confusing
 func (s *Spec) Registrations() []*parser.Registration {
 	return s.registrar.Registrations()
 }

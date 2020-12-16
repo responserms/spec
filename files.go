@@ -62,14 +62,5 @@ func (s *Spec) ParsedFiles() []string {
 // using the provided glob pattern.
 func (s *Spec) FileGlob(pattern string) *Diagnostics {
 	filenames, _ := filepath.Glob(pattern)
-
-	// TODO: revisit error handling here
-	// A note on not handling the error:
-	//   I'm not happy about this (or maybe I am?), but I could not generate
-	//   a test to break this with error checking, including an old GitHub
-	//   issue that caused this to recurse before (https://github.com/golang/go/issues/15879)
-	//   due to the OS itself. I am going to leave this without but if we notice
-	//   issues we can bring in error handling.
-
 	return s.Files(filenames...)
 }
