@@ -1,3 +1,10 @@
 # Spec
 
-The Spec package provides helpers in processing HCL-based file schemas. More documentation coming soon, probably. For now, this is intended for internal usage in Response and is unstable otherwise. Don't use this in your project yet. We _will_ make breaking changes to the public API.
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=responserms_spec)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=responserms_response&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=responserms_spec)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=responserms_response&metric=security_rating)](https://sonarcloud.io/dashboard?id=responserms_spec)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=responserms_response&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=responserms_spec)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=responserms_response&metric=coverage)](https://sonarcloud.io/dashboard?id=responserms_spec)
+
+The Spec package provides a wrapper around reading from and using HCL-based configuration and markup files, such as those used by Response. This package is not intended for public consumption yet, we will most likely have breaking API changes.
